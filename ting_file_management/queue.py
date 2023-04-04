@@ -23,4 +23,3 @@ class Queue(AbstractQueue):
         if index >= 0 and index <= len(self._data) - 1:
             return self._data[index]
         raise IndexError('Índice Inválido ou Inexistente')
-
