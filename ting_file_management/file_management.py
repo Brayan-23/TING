@@ -1,7 +1,7 @@
 import sys
 
 
-def txt_importer(path_file):
+def txt_importer(path_file: str):
     if not path_file.endswith('.txt'):
         print('Formato inválido', file=sys.stderr)
     try:
