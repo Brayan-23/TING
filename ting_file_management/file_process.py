@@ -12,7 +12,7 @@ def process(path_file, instance):
     if len(instance) == 0:
         instance.enqueue(obj)
         print(obj, file=sys.stdout)
-    if len(instance) != 0:   
+    if len(instance) != 0:
         for i in range(len(instance)-1):
             result = instance.search[i]
             if result['nome_do_arquivo'] == path_file:
@@ -36,5 +36,3 @@ def file_metadata(instance, position):
         print(instance.search(position), file=sys.stdout)
     except IndexError:
         print('Posição inválida', file=sys.stderr)
-
-#
